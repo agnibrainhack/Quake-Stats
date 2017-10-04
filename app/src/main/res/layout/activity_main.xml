@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.root.myapplication.MainActivity"
+    android:alpha=".9"
+    android:background="@drawable/eath"
+
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:weightSum="1"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_marginBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Earthquake Activity"
+
+        android:textColor="@android:color/holo_orange_light"
+        android:gravity="center_horizontal"
+        android:textSize="32sp"
+
+        android:textStyle="bold"
+        android:layout_weight="0.34" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set The Time Period"
+        android:textSize="25sp"
+        android:textStyle="italic"
+        android:textColor="@android:color/primary_text_dark_nodisable"
+        android:layout_gravity="center"
+        android:padding="16dp"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:textSize="24sp"
+            android:layout_weight="1"
+
+            android:id="@+id/text1"
+            android:gravity="center"
+            android:onClick="date1"
+            android:textColor="@android:color/white"
+            android:layout_margin="8dp"
+            android:background="@drawable/round_view2"
+
+            />
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="TO"
+            android:layout_weight="1"
+            android:textSize="24sp"
+            android:textColor="@android:color/primary_text_dark_nodisable"
+
+
+            android:gravity="center"
+            android:id="@+id/text2"
+
+            />
+        <TextView
+            android:layout_width="120dp"
+            android:background="@drawable/round_view1"
+            android:textColor="@android:color/white"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_margin="8dp"
+            android:onClick="date2"
+            android:textSize="24sp"
+
+            android:id="@+id/text3"
+
+            />
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Set The Minimum Magnitude "
+        android:textSize="28sp"
+        android:gravity="center"
+        android:layout_margin="8dp"
+        android:textColor="@android:color/primary_text_dark_nodisable"
+        android:layout_gravity="center"
+        android:textStyle="italic"
+        />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <SeekBar
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/round_view2"
+            android:id="@+id/seek"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="28sp"
+            android:background="@drawable/round_view1"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:layout_height="40dp"
+            android:id="@+id/seekbarvalue"
+            android:layout_toEndOf="@+id/seek"
+
+            android:layout_alignBottom="@+id/seek" />
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Check Now"
+        android:onClick="galpo"
+        android:background="@drawable/round_button"
+        android:textColor="@android:color/white"
+        />
+
+    </LinearLayout>
+</FrameLayout>
